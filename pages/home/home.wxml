@@ -1,0 +1,86 @@
+  <view class="page">
+  <view class="page-body">
+    <!--#1aad19是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+
+    <view class="wrap_grids">
+      <block wx:for="{{grids}}" wx:for-item="grid" wx:key="{{grids.id}}">
+        <navigator url="" class="wrap_grid" hover-class="wrap_grid_active">
+          <view class="color-bg {{grid.bgcolor}}">
+            <image mode='widthFix' class="wrap_grid_icon" src="{{grid.url}}" />
+          </view>
+          <view class="wrap_grid_label">{{grid.title}}</view>
+        </navigator>
+      </block>
+    </view>
+
+    <view class="page-break">
+      <view class="page-section-title">
+        <!-- <text>分享头条</text> -->
+        <image class='new-top' src='/images/top-news.png'></image> 
+        <wux-notice-bar wux-class="notice-bar"  loop leading="3000" content="微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp </n> 微信小程序自定义组" />
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="page-section-title">
+        <text>热门推荐</text>
+      </view>
+      <view class="page-section-spacing">
+        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+          <view id="demo1" class="scroll-view-item_H demo-text-1">
+            <image style="height:400rpx" src='/images/timg.jpg'></image>
+          </view>
+          <view id="demo2" class="scroll-view-item_H demo-text-2">
+            <image style="height:400rpx" src='/images/0005018305195772_b.jpg'></image>
+          </view>
+          <view id="demo3" class="scroll-view-item_H demo-text-3">
+            <image style="height:400rpx" src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+
+
+    <!-- <view class="page_content">
+      <wux-row>
+        <wux-col span="3">
+          <view class="example">
+              <view class="example__badge"></view>
+              <text class="incon-text">热门活动</text>
+          </view>
+        </wux-col>
+        <wux-col span="3">
+          <view class="example">
+              <view class="example__badge"></view>
+              <text class='incon-text'>我的收益</text>
+          </view>
+        </wux-col>
+        <wux-col span="3">
+          <view class="example">
+              <view class="example__badge"></view>
+              <text class='incon-text'>我的推荐</text>
+          </view>
+        </wux-col>
+        <wux-col span="3">
+          <view class="example">
+              <view class="example__badge"></view>
+              
+          </view>
+          <text class='incon-text'>关于我们</text>
+        </wux-col>
+      </wux-row>
+    </view>  -->
+
+  </view>
+
+</view>

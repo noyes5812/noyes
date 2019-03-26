@@ -1,0 +1,80 @@
+<view class="page_bd">
+  <wux-tabs auto="{{ false }}" scroll current="{{ activeIndex }}" bindchange="onChange">
+    <block wx:for="{{tabItems}}" wx:for-item="tabobj" wx:key="{{tabobj.id}}">
+      <wux-tab key="{{tabobj.key}}" title="{{tabobj.title}}"></wux-tab>
+    </block>
+  </wux-tabs>
+
+</view>
+<!-- 
+<view class='wrap'>
+  <view class='left_wrap'>
+    <text class='left_txt'>100</text>
+    <text class='left_txt_bottom'>满199可用</text>
+  </view>
+  
+  <view class='right_wrap'>
+    <view class='top-right-content'>
+      <text class='top-icon'>东券</text>
+    </view>
+    <view class='top-middle-content'>
+      <text>2018.10.29</text>
+      <button>立即使用</button>
+    </view>
+    <view class='top-bottom-content'>
+      详细
+    </view>
+  </view>
+</view> -->
+
+
+<view class="tab-item-list">
+  <view class="aui-flex">
+    <view class="aui-left-change">
+      <h2>
+        <em>￥</em>
+        200
+      </h2>
+      <p>满299元可用</p>
+    
+    </view>
+    <view class="aui-flex-box aui-flex-box-two">
+      <h3>
+        <em>券票</em>
+        仅限购买阿迪达斯旗舰店商品
+
+      </h3>
+      <view class="aui-flex aui-flex-bor-bom">
+        <view class="aui-flex-box aui-flex-box-flow">2018.08.13-2018.08.31</view>
+        <view class="aui-btn-use">立即使用</view>
+      </view>
+      <view class="aui-flex aui-flex-show">
+        <view class="aui-flex-box">详细信息</view>
+        <view class="aui-show-btn">
+          <i class="icon fa fa-angle-right"></i>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="aui-show-box">
+    <p>默认隐藏内容</p>
+  </view>
+</view>
+
+
+<!-- <view style="position: absolute;top: 68rpx;width: 100%;height:{{contentHeight}}px">
+    <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
+      <swiper-item>
+        <text>{{activeIndex}}</text>
+      </swiper-item>
+      <swiper-item>
+        <view>比赛集锦</view>
+      </swiper-item>
+      <swiper-item>
+        <view>你懂专栏</view>
+      </swiper-item>
+      <swiper-item>
+        <view>天下足球</view>
+      </swiper-item>
+    </swiper> 
+  </view> -->

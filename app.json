@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/item/item",
+    "pages/news/news",
+    "pages/shoppingcart/shoppingcart",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/integral/integral",
+    "pages/integral-info/integral-info"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TTMall",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tabBars/home.png",
+        "selectedIconPath": "images/tabBars/home_check.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/item/item",
+        "iconPath": "images/tabBars/category.png",
+        "selectedIconPath": "images/tabBars/category_select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBars/shoppingcart.png",
+        "selectedIconPath": "images/tabBars/shoppingcart_select.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/tabBars/news.png",
+        "selectedIconPath": "images/tabBars/news_select.png",
+        "text": "资讯"
+      },
+      
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/tabBars/me.png",
+        "selectedIconPath": "images/tabBars/me_check.png",
+        "text": "我"
+      }
+    ]
+  }
+}

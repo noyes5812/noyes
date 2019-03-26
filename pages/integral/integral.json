@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的积分",
+  "navigationBarBackgroundColor": "#33CC99",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "wux-refresher": "../../dist/refresher/index",
+    "wux-tabs": "../../dist/tabs/index",
+    "wux-tab": "../../dist/tab/index",
+    "wux-prompt": "../../dist/prompt/index"
+  }
+}

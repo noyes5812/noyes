@@ -1,0 +1,108 @@
+.top_info {
+  background: #fff;
+}
+
+.wux-media {
+  display: flex;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  padding: 30rpx;
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+}
+
+.wux-media_hd {
+  margin-right: 0.8em;
+  text-align: center;
+}
+
+.wux-media_thumb {
+  width: 120rpx;
+  height: 120rpx;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.wux-media_bd {
+  webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.wux-media_title {
+  font-weight: 400;
+  font-size: 34rpx;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.wux-media_desc {
+  color: #808080;
+  font-size: 26rpx;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/****grid-button***/
+
+.wrap_grids {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-top: 20rpx;
+  padding-top:20rpx;
+
+  /* margin:15px 0;
+  border: 0; */
+}
+
+.wrap_grid {
+  width: 25%; /*微信小程序獨有的像素單位，隨屏幕分辨率動態變化*//* border: 1px solid #fff; */
+  height: 152rpx;
+  text-align: center;
+}
+
+.color-bg {
+  height: 82rpx;
+  width: 82rpx;
+  /* background: red; */
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 82rpx;
+  background: red;
+}
+
+.wrap_grid_icon {
+  /* 居中 */
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center; */
+  overflow: hidden;
+  width: 58rpx;
+  height: 58rpx;
+  line-height: 82rpx;
+  padding-top: 10rpx;
+}
+
+.wrap_grid_label {
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

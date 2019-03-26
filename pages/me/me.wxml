@@ -1,0 +1,91 @@
+<wux-refresher id="wux-refresher" bind:pulling="onPulling" bind:refresh="onRefresh">
+
+  <view class='top_info' style='background:#fff'>
+    <view class="wux-media">
+      <view class="wux-media_hd">
+        <!-- <image class="wux-media_thumb" mode="aspectFit" mode="cover" src="{{userInfo.avatarUrl}}" /> -->
+        <view class="page_bd page_bd_spacing">
+          <wux-avatar mode="aspectFit" mode="cover" size="large" src="{{userInfo.avatarUrl}}" />
+        </view>
+      </view>
+      <view class="wux-media_bd">
+        <view class="wux-media_title">{{userInfo.nickName}}</view>
+        <view bindtap="getUserInfo" open-type="getUserInfo">
+          <view class="wux-media_desc">修改资料</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="page_bd" style='background:#fff;'>
+    <wux-cell-group>
+      <wux-cell title="我的订单" is-link extra="查看全部"></wux-cell>
+    </wux-cell-group>
+    <view class="wrap_grids">
+      <block wx:for="{{grids}}" wx:for-item="grid" wx:key="{{grid.id}}">
+        <navigator url="" class="wrap_grid" hover-class="wrap_grid_active">
+          <!-- <view class="color-bg {{grid.bgcolor}}"> -->
+          <wux-badge count="{{grid.num}}">
+            <image mode='widthFix' class="wrap_grid_icon" src="{{grid.url}}" />
+          </wux-badge>
+          <!-- </view> -->
+          <view class="wrap_grid_label">{{grid.title}}</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <view class="page_bd" style='background:#fff; margin-top:5px'>
+    <wux-cell-group>
+      <navigator url="/pages/integral/integral" class="navigator">
+        <wux-cell thumb="/images/jifen.png" is-link title="我的积分" url="/pages/integral/integral" open-type="switchTab"></wux-cell>
+      </navigator>
+
+      <navigator url="/pages/integral/integral" class="navigator">
+        <wux-cell thumb="/images/msg.png" is-link title="我的消息"></wux-cell>
+      </navigator>
+      <navigator url="/pages/integral/integral" class="navigator">
+        <wux-cell thumb="/images/myshare.png" is-link title="我的推广"></wux-cell>
+      </navigator>
+    </wux-cell-group>
+  </view>
+
+  <view class="page_bd" style='background:#fff; margin-top:5px'>
+    <wux-cell-group>
+      <wux-cell thumb="/images/quan.png" title="优惠券" is-link></wux-cell>
+      <wux-cell thumb="/images/goods.png" is-link title="商品收藏"></wux-cell>
+      <wux-cell thumb="/images/shopp.png" is-link title="店铺收藏"></wux-cell>
+      <wux-cell thumb="/images/zuji.png" is-link title="历史浏览"></wux-cell>
+    </wux-cell-group>
+  </view>
+
+  <view class="page_bd" style='background:#fff; margin-top:5px'>
+    <wux-cell-group>
+      <wux-cell thumb="/images/setting.png" title="设置中心" is-link></wux-cell>
+
+    </wux-cell-group>
+  </view>
+  <!-- 
+  <view class="page_bd" style='background:#fff;'>
+    <view class="wrap_grids">
+      <block wx:for="{{collects}}" wx:for-item="collect" wx:key="{{collect.id}}">
+        <navigator url="" class="wrap_grid" hover-class="wrap_grid_active">
+          <view class="color-bg {{collect.bgcolor}}">
+            <image mode='widthFix' class="wrap_grid_icon" src="{{collect.url}}" />
+          </view>
+          <view class="wrap_grid_label">{{collect.title}}</view>
+        </navigator>
+      </block>
+    </view>
+  </view> -->
+
+
+  <!-- 
+      获取头像资料
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data> -->
+  <!-- 文本提示框 -->
+  <wux-toast id="wux-toast" />
+
+</wux-refresher>

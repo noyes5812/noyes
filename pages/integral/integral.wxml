@@ -1,0 +1,20 @@
+<wux-refresher id="wux-refresher" bind:pulling="onPulling" bind:refresh="onRefresh">
+  <view class="page_bd" style='background:#33CC99;text-align:center;padding:40px 0'>
+    <view style='text-align:center;'>
+      <text class='point_text' style="color:#fff;display:block">可用积分</text>
+      <text class='point_num' style="color:#fff;font-size:34px;display:block">0</text>
+    </view>
+   
+  <navigator url='../integral-info/integral-info'>
+      <!-- <view bindtap='onGetPoint'> -->
+      <text class='point_num' style="color:#fff;text-align:right;font-size:10px;   position: absolute; right:10px">如何获取积分？</text>
+      <!-- </view> -->
+    </navigator>
+  </view>
+  <view class="page_bd">
+    <wux-tabs default-current="tab1">
+      <wux-tab key="tab1" title="获取记录" bindtap="tabClick"></wux-tab>
+      <wux-tab key="tab2" title="消费记录" bindtap="tabClick"></wux-tab>
+    </wux-tabs>
+  </view>
+</wux-refresher>
