@@ -8,8 +8,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/integral/integral",
-    "pages/integral-info/integral-info"
-
+    "pages/integral-info/integral-info",
+    "pages/orders/orders",
+    "pages/ticket/ticket",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -43,7 +45,6 @@
         "selectedIconPath": "images/tabBars/news_select.png",
         "text": "资讯"
       },
-      
       {
         "pagePath": "pages/me/me",
         "iconPath": "images/tabBars/me.png",
@@ -51,5 +52,6 @@
         "text": "我"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

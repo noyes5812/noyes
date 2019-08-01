@@ -4,8 +4,8 @@
       <text class='point_text' style="color:#fff;display:block">可用积分</text>
       <text class='point_num' style="color:#fff;font-size:34px;display:block">0</text>
     </view>
-   
-  <navigator url='../integral-info/integral-info'>
+
+    <navigator url='../integral-info/integral-info'>
       <!-- <view bindtap='onGetPoint'> -->
       <text class='point_num' style="color:#fff;text-align:right;font-size:10px;   position: absolute; right:10px">如何获取积分？</text>
       <!-- </view> -->

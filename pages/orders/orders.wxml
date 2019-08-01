@@ -1,0 +1,20 @@
+<wux-tabs wux-class="bordered" controlled current="{{ key }}" bindchange="onTabsChange">
+  <block wx:for="{{ tabs }}" wx:key="key">
+    <wux-tab key="{{ item.key }}" title="{{ item.title }}"></wux-tab>
+  </block>
+</wux-tabs>
+<swiper current="{{ index }}" style="height:100%" bindchange="onSwiperChange">
+  <block wx:for="{{ tabs }}" wx:key="key">
+    <swiper-item>
+      <view class="content">{{ item.content }}
+        <view class="sub-title">Thumb</view>
+        <wux-media thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
+      </view>
+
+       <view class="content">{{ item.content }}
+        <view class="sub-title">Thumb</view>
+        <wux-media thumb="http://pbqg2m54r.bkt.clouddn.com/logo.png" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

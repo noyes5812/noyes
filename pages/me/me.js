@@ -12,19 +12,18 @@ const app = getApp()
 Page({
   data: {
     grids: [
-      { "id": 0, "title": "待付款", "url": "/images/waitpay.png","num":""},
-      { "id": 1, "title": "待分享", "url": "/images/waitshare.png", "num": "12"},
-      { "id": 2, "title": "待发货", "url": "/images/waithuo.png", "num": "2"},
-      { "id": 3, "title": "待收货", "url": "/images/waitpick.png", "num": "4"},
-      { "id": 4, "title": "待评价", "url": "/images/waitspeek.png", "num": "6"}
+      { "id": 0, "title": "待付款", "goto":"/pages/orders/orders?key=1", "url": "/images/waitpay.png","num":""},
+      { "id": 1, "title": "待收货", "goto": "www.baidu1.com?key=2", "url": "/images/waitpick.png", "num": "4"},
+      { "id": 2, "title": "待评价", "goto": "www.baidu2.com?key=3", "url": "/images/waitspeek.png", "num": "6"},
+      { "id": 3, "title": "我的订单", "goto": "www.baidu3.com?key=0", "url": "/images/waithuo.png", "num": "2" },
     ],
-    collects: [
-      { "id": 0, "title": "优惠券", "url": "/images/activity.png" },
-      { "id": 1, "title": "商品收藏", "url": "/images/income.png" },
-      { "id": 2, "title": "店铺收藏", "url": "/images/recommend.png" },
-      { "id": 3, "title": "历史浏览", "url": "/images/about.png" }
+    // collects: [
+    //   { "id": 0, "title": "优惠券", "url": "/images/activity.png" },
+    //   { "id": 1, "title": "商品收藏", "url": "/images/income.png" },
+    //   { "id": 2, "title": "店铺收藏", "url": "/images/recommend.png" },
+    //   { "id": 3, "title": "历史浏览", "url": "/images/about.png" }
      
-    ],
+    // ],
   
     userInfo: {},
     hasUserInfo: false,

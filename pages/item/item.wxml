@@ -61,8 +61,8 @@
   </view>
 </view>
 
-
-<!-- <view style="position: absolute;top: 68rpx;width: 100%;height:{{contentHeight}}px">
+<!-- 
+ <view style="position: absolute;top: 68rpx;width: 100%;height:{{contentHeight}}px">
     <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
       <swiper-item>
         <text>{{activeIndex}}</text>
@@ -77,4 +77,4 @@
         <view>天下足球</view>
       </swiper-item>
     </swiper> 
-  </view> -->
+  </view>  -->

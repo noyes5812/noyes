@@ -1,0 +1,31 @@
+<!--优惠券-->
+<view class="tab-item-list">
+  <view class="aui-flex">
+    <view class="aui-left-change">
+      <h2>
+        <em>￥</em>
+        200
+      </h2>
+      <p>满299元可用</p>
+    </view>
+    <view class="aui-flex-box aui-flex-box-two">
+      <h3>
+        <em>券票</em>
+        仅限购买阿迪达斯旗舰店商品
+      </h3>
+      <view class="aui-flex aui-flex-bor-bom">
+        <view class="aui-flex-box aui-flex-box-flow">2018.08.13-2018.08.31</view>
+        <view class="aui-btn-use">立即使用</view>
+      </view>
+      <view class="aui-flex aui-flex-show">
+        <view class="aui-flex-box">详细信息</view>
+        <view class="aui-show-btn">
+          <i class="icon fa fa-angle-right"></i>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="aui-show-box">
+    <p>默认隐藏内容</p>
+  </view>
+</view>
